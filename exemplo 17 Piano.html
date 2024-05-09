@@ -1,0 +1,276 @@
+<! DOCTYPE html>
+<html>
+<body onkeydown="Tocar1(event)">
+
+<audio id="al" controls style="width:0px" preload="auto">
+<source src="piano/040.wav">
+</audio>
+
+<audio id="a2" controls style="width:0px"preload="auto">
+<source src="piano/041.wav">
+</audio>
+
+<audio id="a3" controls style="width:0px"preload="auto">
+<source src="piano/042.wav">
+</audio>
+
+<audio id="a4" controls style="width:0px"preload="auto">
+<source src="piano/043.wav">
+</audio>
+
+<audio id="a5" controls style="width:0px"preload="auto">
+<source src="piano/044.wav">
+</audio>
+
+<audio id="a6" controls style="width:0px"preload="auto">
+<source src="piano/045.wav">
+</audio>
+
+<audio id="a7" controls style="width:0px"preload="auto">
+<source src="piano/046.wav">
+</audio>
+
+<audio id="a8" controls style="width:0px"preload="auto">
+<source src="piano/047.wav">
+</audio>
+
+<audio id="a9" controls style="width:0px"preload="auto">
+<source src="piano/048.wav">
+</audio>
+
+<audio id="a10" controls style="width:0px"preload="auto">
+<source src="piano/049.wav">
+</audio>
+
+<audio id="a11" controls style="width:0px"preload="auto">
+<source src="piano/050.wav">
+</audio>
+
+<audio id="a12" controls style="width:0px"preload="auto">
+<source src="piano/051.wav">
+</audio>
+
+<audio id="a13" controls style="width:0px"preload="auto">
+<source src="piano/052.wav">
+</audio>
+
+<audio id="a14" controls style="width:0px"preload="auto">
+<source src="piano/053.wav">
+</audio>
+
+<audio id="a15" controls style="width:0px"preload="auto">
+<source src="piano/054.wav">
+</audio>
+
+<audio id="a16" controls style="width:0px"preload="auto">
+<source src="piano/055.wav">
+</audio>
+
+<audio id="a17" controls style="width:0px"preload="auto">
+<source src="piano/056.wav">
+</audio>
+
+<audio id="CarolOfTheBells" controls style="width:0px"preload="auto">
+<source src="piano/CarolOfTheBells.mp3">
+</audio>
+
+<audio id="RushE" controls style="width:0px"preload="auto">
+<source src="piano/RushE.mp3">
+</audio>
+
+<button onclick="CarolOfTheBells()"style="position:absolute;left:125px;top:100px;width:150px;height:100px;background-color:white">Carol Of The Bells</button>
+<button onclick="RushE()"style="position:absolute;left:300px;top:100px;width:150px;height:100px;background-color:white">Rush E</button>
+<button onclick="Stop()" style="position:absolute;left:475px;top:100px;width:150px;height:100px;background-color:white">Stop</button>
+
+<button onclick="donota()"style="position:absolute;left:125px;top:250px;width:50px;height:180px;background-color:white">A</button>
+<button onclick="renota()"style="position:absolute;left:175px;top:250px;width:50px;height:180px;background-color:white">S</button>
+<button onclick="donota2()"style="position:absolute;left:160px;top:250px;width:30px;height:100px;background-color:black;color:white">W</button>
+<button onclick="minota()"style="position:absolute;left:225px;top:250px;width:50px;height:180px;background-color:white">D</button>
+<button onclick="renota2()"style="position:absolute;left:210px;top:250px;width:30px;height:100px;background-color:black;color:white">E</button>
+<button onclick="fanota()"style="position:absolute;left:275px;top:250px;width:50px;height:180px;background-color:white">F</button>
+<button onclick="solnota()"style="position:absolute;left:325px;top:250px;width:50px;height:180px;background-color:white">G</button>
+<button onclick="fanota2()"style="position:absolute;left:310px;top:250px;width:30px;height:100px;background-color:black;color:white">T</button>
+<button onclick="lanota()"style="position:absolute;left:375px;top:250px;width:50px;height:180px;background-color:white">H</button>
+<button onclick="solnota2()"style="position:absolute;left:360px;top:250px;width:30px;height:100px;background-color:black;color:white">Y</button>
+<button onclick="sinota()"style="position:absolute;left:425px;top:250px;width:50px;height:180px;background-color:white">J</button>
+<button onclick="lanota2()"style="position:absolute;left:410px;top:250px;width:30px;height:100px;background-color:black;color:white">U</button>
+<button onclick="donota3()"style="position:absolute;left:475px;top:250px;width:50px;height:180px;background-color:white">K</button>
+<button onclick="renota3()"style="position:absolute;left:525px;top:250px;width:50px;height:180px;background-color:white">L</button>
+<button onclick="donota4()"style="position:absolute;left:510px;top:250px;width:30px;height:100px;background-color:black;color:white">O</button>
+<button onclick="minota2()"style="position:absolute;left:575px;top:250px;width:50px;height:180px;background-color:white">M</button>
+<button onclick="renota4()"style="position:absolute;left:560px;top:250px;width:30px;height:100px;background-color:black;color:white">P</button>
+
+
+<img src="natal.jpg" style="position:absolute;left:125px;top:500px;width:500px;height:400px">
+
+
+<script>
+
+function donota()
+	{
+		document.getElementById('al').pause();
+		document.getElementById('al').currentTime=0;
+		document.getElementById('al').play();
+	}
+	
+function donota2()
+	{
+		document.getElementById('a2').pause();
+		document.getElementById('a2').currentTime=0;
+		document.getElementById('a2').play();
+	}
+function renota()
+	{
+		document.getElementById('a3').pause();
+		document.getElementById('a3').currentTime=0;
+		document.getElementById('a3').play();
+	}
+function renota2()
+	{
+		document.getElementById('a4').pause();
+		document.getElementById('a4').currentTime=0;
+		document.getElementById('a4').play();
+	}
+	
+function minota()
+	{
+		document.getElementById('a5').pause();
+		document.getElementById('a5').currentTime=0;
+		document.getElementById('a5').play();
+	}
+
+function fanota()
+	{
+		document.getElementById('a6').pause();
+		document.getElementById('a6').currentTime=0;
+		document.getElementById('a6').play();
+	}
+	
+function fanota2()
+	{
+		document.getElementById('a7').pause();
+		document.getElementById('a7').currentTime=0;
+		document.getElementById('a7').play();
+	}
+function solnota()
+	{
+		document.getElementById('a8').pause();
+		document.getElementById('a8').currentTime=0;
+		document.getElementById('a8').play();
+	}
+function solnota2()
+	{
+		document.getElementById('a9').pause();
+		document.getElementById('a9').currentTime=0;
+		document.getElementById('a9').play();
+	}
+function lanota()
+	{
+		document.getElementById('a10').pause();
+		document.getElementById('a10').currentTime=0;
+		document.getElementById('a10').play();
+	}
+function lanota2()
+	{
+		document.getElementById('a11').pause();
+		document.getElementById('a11').currentTime=0;
+		document.getElementById('a11').play();
+	}
+function sinota()
+	{
+		document.getElementById('a12').pause();
+		document.getElementById('a12').currentTime=0;
+		document.getElementById('a12').play();
+	}
+function donota3()
+	{
+		document.getElementById('a13').pause();
+		document.getElementById('a13').currentTime=0;
+		document.getElementById('a13').play();
+	}
+function donota4()
+	{
+		document.getElementById('a14').pause();
+		document.getElementById('a14').currentTime=0;
+		document.getElementById('a14').play();
+	}
+function renota3()
+	{
+		document.getElementById('a15').pause();
+		document.getElementById('a15').currentTime=0;
+		document.getElementById('a15').play();
+	}
+function renota4()
+	{
+		document.getElementById('a16').pause();
+		document.getElementById('a16').currentTime=0;
+		document.getElementById('a16').play();
+	}
+function minota2()
+	{
+		document.getElementById('a17').pause();
+		document.getElementById('a17').currentTime=0;
+		document.getElementById('a17').play();
+	}
+function CarolOfTheBells()
+	{
+		document.getElementById('CarolOfTheBells').pause();
+		document.getElementById('CarolOfTheBells').currentTime=0;
+		document.getElementById('CarolOfTheBells').play();
+	}
+function RushE()
+	{
+		document.getElementById('RushE').pause();
+		document.getElementById('RushE').currentTime=0;
+		document.getElementById('RushE').play();
+	}
+function Stop(){
+        document.getElementById('CarolOfTheBells').pause();
+        document.getElementById('RushE').pause();
+    }
+	
+function Tocar1(event)
+	{
+		var key = event.keyCode;
+		
+		if (key == 65) //Tecla do A
+			donota();
+		else if (key == 87) //Tecla do W
+			donota2();
+		else if (key == 83) //Tecla do S
+			renota();
+		else if (key == 69) //Tecla do E
+			renota2();
+		else if (key == 68) //Tecla do D
+			minota();
+		else if (key == 70) //Tecla do F
+			fanota();
+		else if (key == 84) //Tecla do T
+			fanota2();
+		else if (key == 71) //Tecla do G
+			solnota();
+		else if (key == 89) //Tecla do Y
+			solnota2();
+		else if (key == 72) //Tecla do H
+			lanota();
+		else if (key == 85) //Tecla do U
+			lanota2();
+		else if (key == 74) //Tecla do J
+			sinota();
+		else if (key == 75) //Tecla do K
+			donota3();
+		else if (key == 79) //Tecla do O
+			donota4();
+		else if (key == 76) //Tecla do L
+			renota3();
+		else if (key == 80) //Tecla do P
+			renota4();
+		else if (key == 77) //Tecla do M
+			minota2();
+
+	}
+	
+
+		
+</script>
+</body></html>
